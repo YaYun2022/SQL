@@ -1,0 +1,7 @@
+1、SQL是结构化查询语言（structured Query Language）
+2、SQL数据库是对数据进行储存和读取或者修改。
+3、数据库的基本构成：
+数据     DATA  对客观事物的符号表示,也是数据库储存最基本的单位
+数据库   DATABASE   简称DB
+数据库管理系统  DBMS
+数据库系统      DBS
