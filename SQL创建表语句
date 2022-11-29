@@ -1,0 +1,7 @@
+--创建表SQL语句 以成绩单
+
+create table 成绩表
+(
+学号 varchar (15) not null,
+成绩 int
+)
