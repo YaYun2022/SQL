@@ -1,0 +1,29 @@
+--数据库的创建SQL语句代码演示，题1：要求创建数据库名称为DB1；数据库初始大小10mb，数据库最大值500mb，数据库增长值5%；
+--辅助数据库名称为DB2；数据库初始大小10mb，数据库最大值500mb，数据库增长为3mb
+--数据库日志文件名db_logo,数据库初始大小为5mb，数据库最大值不限制，数据库增长率2%；数据库文件储存路径为：D:\SQLXX
+--学习要点：1、主数据库文件只能唯一的1个文件后缀名.mdf，辅助数据库文件可以（0-任意）后缀名.ndf，日志数据库至少1个后缀名.ldf
+create database DB1
+on
+(
+name='DB1',
+filename='D:\sqlxx\DB1.mdf',
+size=10mb,
+maxsize=500mb,
+filegrowth=5%
+),
+(name='DB2',
+filename='D:\sqlxx\DB2.ndf',
+size=10mb,
+maxsize=500mb,
+filegrowth=2%
+)
+
+log
+ on 
+(
+name='DB1_log',
+filename='D:\sqlxx\DB1_log.ldf',
+size=5mb,
+maxsize=unlimited,
+filegrowth=2%
+)
