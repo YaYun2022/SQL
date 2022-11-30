@@ -36,19 +36,4 @@ E-R图也叫实体联系图，提供了实体类型，属性和联系的方法�
 M:N代表多对多的联系
 1:1 一对一关系
 1：M一对多关系
-数据库创建语法
-create database db2
-on
-(name=db2_data,
-filename='G:\sqlxx\db2.mdf',
-size=10,
-maxsize=50,
-filegrowth=10%
-)
-log on
-(name=db_log,
-filename='G:\sqlxx\db_log.ldf',
-size=2,
-maxsize=unlimited,
-filegrowth=1mb
-)
+
