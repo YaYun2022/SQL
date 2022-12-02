@@ -1,7 +1,38 @@
---创建表SQL语句 以成绩单
+/*SQL 数据库表的建立,首先我们要认识数据类型:
+整数型
+BIGINT 8字节
+INT 常用 4字节
+SAMLLINT 小整形 2字节
+TINYINT   1字节
+BIT 位类型 0和1 1字节
+小数型
+DECIMAL (P,S)和NUMERIC(P,S)小数p确定总位数（默认18，）
+s确定小数位（默认0）
+货币
+MONEY 货币值8字节
+SAMLLMONEY 4字节
+近似数字
+FLOAT 8字节
+REAL 4字节
+日期和时间
+DATETIME 8字节 1753.1.1-9999.12.31
+SMALLDATETIME 4字节 1900.1.1-2079.12.31
+字符串
+CHAR(n)n长度范围1-8000固定长度小于n不空格
+VARCHAR(n)n长度可变
+创建表语法
+使用CREATE TABLE 语句
+create table
+[database_name.[schema_name].|schema_name].table_name{(column_name column_property column_constraint)}[,...]
+切换数据库语法 use 数据库名称 
 
-create table 成绩表
+*/
+--创建学生表（学号，姓名，年龄，性别）
+
+create table  学生表
 (
-学号 varchar (15) not null,
-成绩 int
+学号 VARCHAR (15) NOT NULL,
+姓名 char (10) not null,
+年龄 int null,
+性别 char(5)
 )
